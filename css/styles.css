@@ -8,7 +8,7 @@ table {
 }
 
 .column {
-    flex: 50%;
+    flex: 45%;
 }
 
 td, th {
@@ -41,6 +41,7 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
+
 
 input[type=submit]:hover {
     background-color: #45a049;

@@ -9,6 +9,12 @@ include 'inc/functions.php';
         <style>
             @import url("css/styles.css");
         </style>
+        <script>
+function myFunction(info)
+{
+alert(info);
+}
+</script>
     </head>
     <body>
         <h2>Device Checkout</h2>
@@ -25,6 +31,8 @@ include 'inc/functions.php';
         <?php
             ///////////////////////////////////////////////////////////////////////
             //This is the example provided on ilearn modified to fit this project
+            
+            
         $orderCPUBy = array('Model', 'Unlocked', 'Cores', 'Price');
         $orderGPUBy = array('Model', '3DMark', 'Cores', 'Price');//include this in the GPUY array
         $ordercpu = "Model";
@@ -85,6 +93,12 @@ include 'inc/functions.php';
             //echo  $row['deviceName'] . ", " . $row['deviceType'] . ', ' . $row['price'] . ", " . $row['status']. "</br>";
             $table_str.='<tr>';
             $table_str.='<td>'.$row['Model'].'</td>'.'<td>'.$row['Unlocked'].'</td>'.'<td>'.$row['Cores'].'</td>'.'<td>'.$row['Price'].'</td>';
+            $table_str.= '<td><form action="welcome.php" method="post"><input type="submit"" value = "Add to Cart"></td>';//Adds the button to add the item to the users sessions, I have not yet implemented the session
+            $table_str.= '<td><form action="welcome.php" method="post"><input type="submit"" value = "info" style="background-color:blue"></td>';
+            $table_str.='<td>';
+            $table_str.='<input type="button" onclick=alert("';
+            $table_str.=(string)$row['Model'];//This was difficult for some reason, we need to add the column to this and then pull that instead of model
+            $table_str.='"); value="Info" />';
             $table_str.='</tr>';
         }
         $table_str.='</table>';
