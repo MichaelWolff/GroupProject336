@@ -4,11 +4,18 @@ table {
     width: 100%;
 }
 .row {
-    display: flex;
+    /*display: flex;*/
+    column-count: 3;
+    columns:3;
 }
 
 .column {
-    flex: 45%;
+    
+    /*flex: 40%;*/
+    /*//flex:100%;*/
+    /*column-fill: auto;*/
+    /*height:100%;*/
+    
 }
 
 td, th {
