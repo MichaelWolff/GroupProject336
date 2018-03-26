@@ -46,6 +46,19 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #45a049;
 }
+input[type=button]{
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=button]:hover {
+    background-color: #3559ad;
+}
 
 div {
     border-radius: 5px;
