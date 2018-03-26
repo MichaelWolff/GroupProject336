@@ -2,19 +2,25 @@ table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
+     display: inline-block; 
 }
 .row {
     /*display: flex;*/
     column-count: 3;
     columns:3;
+    
 }
 
 .column {
     
-    /*flex: 40%;*/
+    flex: 100%;
+    width: 100%;
+    padding:0;
+    margin:0;
     /*//flex:100%;*/
     /*column-fill: auto;*/
     /*height:100%;*/
+    
     
 }
 
